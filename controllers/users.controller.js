@@ -8,7 +8,7 @@ const getUsers = (req = request, res = response) => {
   });
 };
 
-const postUsers = (req, res = response) => {
+const postUsers = (req = request, res = response) => {
   const { name, age } = req.body;
   res.json({
     msg: "post API - controller",
@@ -17,7 +17,7 @@ const postUsers = (req, res = response) => {
   });
 };
 
-const putUsers = (req, res = response) => {
+const putUsers = (req = request, res = response) => {
   const { id } = req.params;
   res.json({
     msg: "put API - controller",
@@ -25,7 +25,7 @@ const putUsers = (req, res = response) => {
   });
 };
 
-const patchUsers = (req, res = response) => {
+const patchUsers = (req = request, res = response) => {
   const { id } = req.params;
 
   res.json({
@@ -34,7 +34,7 @@ const patchUsers = (req, res = response) => {
   });
 };
 
-const deleteUsers = (req, res = response) => {
+const deleteUsers = (req = request, res = response) => {
   const { id } = req.params;
 
   res.json({
